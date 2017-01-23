@@ -1,0 +1,16 @@
+*, html, body, textarea, input {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    font: 112.5%/1.7778 Inconsolata, monospace;
+    text-align: center;
+    color: #444;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

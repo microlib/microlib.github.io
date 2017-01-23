@@ -1,0 +1,27 @@
+{
+  "name": "microlib.github.io",
+  "version": "1.0.0",
+  "description": "Microlib website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microlib/microlib.github.io.git"
+  },
+  "author": "microlib",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/microlib/microlib.github.io/issues"
+  },
+  "homepage": "https://github.com/microlib/microlib.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-rename": "^1.2.2",
+    "run-sequence": "^1.2.2"
+  }
+}
