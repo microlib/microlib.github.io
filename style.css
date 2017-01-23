@@ -14,3 +14,18 @@ html {
     justify-content: center;
     align-items: center;
 }
+
+h1 {
+    font-weight: normal;
+}
+
+a {
+    color: #444;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #848484;
+}

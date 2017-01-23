@@ -20,9 +20,13 @@ gulp.task('watch', ['browserSync'], function() {
     gulp.watch('*.html', browserSync.reload);
 });
 
-// Minify CSS
+// Minify CSS (not in use for now)
 gulp.task('minify', function() {
     return gulp.src('css/main.css')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(cssnano())
         .pipe(rename({
             suffix: '.min'
@@ -33,12 +37,6 @@ gulp.task('minify', function() {
 // And finally, build tasks
 gulp.task('default', function (callback) {
     runSequence(['browserSync', 'watch'],
-        callback
-    );
-});
-
-gulp.task('build', function (callback) {
-    runSequence('minify',
         callback
     );
 });
